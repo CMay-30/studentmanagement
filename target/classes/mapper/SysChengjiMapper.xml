@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tw.dao.SysChengjiMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tw.entity.SysChengji">
+        <id column="id" property="id" />
+        <result column="stuname" property="stuname" />
+        <result column="course" property="course" />
+        <result column="teacher" property="teacher" />
+        <result column="scope" property="scope" />
+        <result column="banji" property="banji" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, stuname, course, teacher, scope, banji
+    </sql>
+
+</mapper>
